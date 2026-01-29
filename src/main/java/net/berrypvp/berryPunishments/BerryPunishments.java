@@ -44,6 +44,8 @@ public final class BerryPunishments extends JavaPlugin {
         getCommand("banip").setExecutor((CommandExecutor) new BanIPCommand(this));
         getCommand("alts").setExecutor((CommandExecutor) new AltsCommand(this));
         getCommand("offend").setExecutor((CommandExecutor) new OffendCommand(this));
+        getCommand("kick").setExecutor((CommandExecutor) new KickCommand(this));
+        getCommand("history").setExecutor((CommandExecutor) new HistoryCommand(this));
 
         getCommand("ban").setTabCompleter(new BanCommand(this));
         getCommand("mute").setTabCompleter(new MuteCommand(this));

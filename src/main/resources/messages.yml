@@ -45,26 +45,6 @@ alts-no-alts: "&cNo alts found for %player%."
 you-are-muted: "&cYou have been muted for %reason% for %duration%."
 alts-scanning: "&eScanning %player%..."
 
-checkban-info: |
-  &7&m--------------------&r &c&lBan Information &7&m--------------------
-  &7Player: &f%player%
-  &7Ban ID: &f%banid%
-  &7Banned by: &f%bannedby%
-  &7Reason: &f%reason%
-  &7Date: &f%date%
-  &7Duration: &f%duration%
-  &7Time Left: &f%timeleft%
-
-checkmute-info: |
-  &7&m--------------------&r &c&lMute Information &7&m--------------------
-  &7Player: &f%player%
-  &7Mute ID: &f%muteid%
-  &7Muted by: &f%mutedby%
-  &7Reason: &f%reason%
-  &7Date: &f%date%
-  &7Duration: &f%duration%
-  &7Time Left: &f%timeleft%
-
 # Search ID
 searchid-ban-info: |
   &7&m--------------------&r &c&lBan Information &7&m--------------------

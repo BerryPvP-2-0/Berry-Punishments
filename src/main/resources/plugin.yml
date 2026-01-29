@@ -1,6 +1,99 @@
 name: Berry-Punishments
-version: '1.0'
+version: '1.0.1'
 main: net.berrypvp.berryPunishments.BerryPunishments
 api-version: '1.21'
 authors: [ MatuMaKa, BerryPvP ]
 description: Punishment Plugin For BerryPvP
+commands:
+  alts:
+    description: Check a player's alts
+    usage: /alts <player | ip>
+    permission: berry.command.punishments.alts
+  ban:
+    description: Ban a player
+    usage: /ban <player> (duration) <reason>
+    permission: berry.command.punishments.ban
+  banip:
+    description: IP ban a player
+    usage: /banip <player> (duration) <reason>
+    permission: berry.command.punishments.banip
+  unban:
+    description: Unban a player
+    usage: /unban <player>
+    permission: berry.command.punishments.unban
+  unbanip:
+    description: Unban an IP
+    usage: /unbanip <ip>
+    permission: berry.command.punishments.unbanip
+  mute:
+    description: Mute a player
+    usage: /mute <player> (duration) <reason>
+    permission: berry.command.punishments.mute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: berry.command.punishments.unmute
+  kick:
+    description: Kick a player
+    usage: /kick <player> <reason>
+    permission: berry.command.punishments.kick
+  searchid:
+    description: Search for a punishment by ID
+    usage: /searchid <id>
+    permission: berry.command.punishments.searchid
+  history:
+    description: View a player's punishment history
+    usage: /history <player>
+    permission: berry.command.punishments.history
+  berrypunishments:
+    description: Manage Berry-Punishments plugin
+    usage: /berrypunishments <reload>
+    permission: berry.command.punishments.admin
+  offend:
+    description: Offend a player
+    usage: /offend <player> <reason>
+    permission: berry.command.punishments.offend
+permissions:
+  berry.command.punishments.alts:
+    description: Allows the use of /alts command
+    default: op
+  berry.command.punishments.ban:
+    description: Allows the use of /ban command
+    default: op
+  berry.command.punishments.banip:
+    description: Allows the use of /banip command
+    default: op
+  berry.command.punishments.unban:
+    description: Allows the use of /unban command
+    default: op
+  berry.command.punishments.unbanip:
+    description: Allows the use of /unbanip command
+    default: op
+  berry.command.punishments.mute:
+    description: Allows the use of /mute command
+    default: op
+  berry.command.punishments.unmute:
+    description: Allows the use of /unmute command
+    default: op
+  berry.command.punishments.kick:
+    description: Allows the use of /kick command
+    default: op
+  berry.command.punishments.searchid:
+    description: Allows the use of /searchid command
+    default: op
+  berry.command.punishments.history:
+    description: Allows the use of /history command
+    default: op
+  berry.command.punishments.berrypunishments.*:
+    description: Allows the use of /berrypunishments command
+    default: op
+    children:
+      berry.command.punishments.berrypunishments.reload:
+        description: Allows the use of /berrypunishments reload
+        default: op
+      berry.command.punishments.berrypunishments.help:
+        description: Allows the use of /berrypunishments help
+        default: op
+  berry.command.punishments.offend:
+    description: Allows the use of /offend command
+    default: op

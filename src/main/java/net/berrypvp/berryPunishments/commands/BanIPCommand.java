@@ -2,6 +2,7 @@ package net.berrypvp.berryPunishments.commands;
 
 import net.berrypvp.berryPunishments.BerryPunishments;
 import net.berrypvp.berryPunishments.utils.BanData;
+import net.berrypvp.berryPunishments.utils.BanScreen;
 import org.bukkit.Bukkit;
 import org.bukkit.command.*;
 import org.bukkit.entity.Player;
@@ -72,7 +73,7 @@ public class BanIPCommand implements CommandExecutor, TabCompleter {
         // Kick all online players with this IP
         for (Player online : Bukkit.getOnlinePlayers()) {
             if (online.getAddress() != null && online.getAddress().getAddress().getHostAddress().equals(ip)) {
-                online.kickPlayer(BanData.createBanScreen(
+                online.kickPlayer(BanScreen.createBanScreen(
                         plugin.getBanManager().getBanById(banId)
                 ));
             }

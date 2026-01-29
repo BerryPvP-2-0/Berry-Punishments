@@ -46,7 +46,7 @@ public class SearchIDCommand implements CommandExecutor {
                     .replace("%duration%", TimeUtil.formatTime(banData.getDuration()))
                     .replace("%timeleft%", TimeUtil.formatTime(banData.getTimeLeft()))
                     .replace("%active%", banData.isExpired() ? "No" : "Yes")
-                    .replace("%banid%", banData.getBanId();
+                    .replace("%banid%", banData.getBanId());
             sender.sendMessage(message);
             return true;
         }
@@ -63,7 +63,7 @@ public class SearchIDCommand implements CommandExecutor {
                     .replace("%duration%", TimeUtil.formatTime(muteData.getDuration()))
                     .replace("%timeleft%", TimeUtil.formatTime(muteData.getTimeLeft()))
                     .replace("%active%", muteData.isExpired() ? "No" : "Yes")
-                    .replace("%muteid%", muteData.getMuteId();
+                    .replace("%muteid%", muteData.getMuteId());
             sender.sendMessage(message);
             return true;
         }
