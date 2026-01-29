@@ -1,0 +1,23 @@
+# Berry-Punishments Configuration
+# Made by MatuMaKa / BerryPvP
+
+# Discord server link shown in ban screen
+# Change this to your server's Discord invite
+discord-server: "https://discord.gg/yourserver"
+
+webhook: "webhook_url_here"
+
+# Commands that muted players cannot use
+# Add or remove commands from this list
+muted-blacklisted-commands:
+  - "tell"
+  - "msg"
+  - "message"
+  - "m"
+  - "t"
+  - "whisper"
+  - "w"
+  - "me"
+  - "say"
+  - "reply"
+  - "r"

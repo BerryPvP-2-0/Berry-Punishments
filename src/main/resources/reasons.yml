@@ -1,0 +1,91 @@
+ban-reasons:
+  Cheating:
+    display: "Cheating"
+    durations:
+      - "7d"
+      - "30d"
+      - "90d"
+      - "-1"
+  Harming-The-Server:
+    display: "Harming The Server"
+    durations:
+      - "-1"
+  Doxxing:
+    display: "Doxxing"
+    durations:
+      - "-1"
+  Bug-Abuse:
+    display: "Bug abuse"
+    durations:
+      - "3d"
+      - "7d"
+      - "14d"
+      - "30d"
+      - "-1"
+  Inappropriate-Skin:
+    display: "Inappropriate Skin/Username"
+    durations:
+      - "30d"
+      - "120d"
+      - "-1"
+  Interrupting-1v1:
+    display: "Interrupting 1v1s"
+    durations:
+      - "1d"
+  Excessive-Running:
+    display: "Excessive Running"
+    durations:
+      - "1d"
+  Freehitting:
+    display: "Freehitting"
+    durations:
+      - "1d"
+
+mute-reasons:
+  Spam:
+    display: "Spam"
+    durations:
+      - "30m"
+      - "1h"
+      - "1d"
+      - "3d"
+      - "7d"
+      - "-1"
+  Advertising:
+    display: "Advertising"
+    durations:
+      - "7d"
+      - "14d"
+      - "30d"
+      - "-1"
+  Toxicity:
+    display: "Toxicity"
+    durations:
+      - "30m"
+      - "1h"
+      - "1d"
+      - "3d"
+      - "7d"
+      - "-1"
+  Racism-Homophobia:
+    display: "Racism/Homophobia"
+    durations:
+      - "3d"
+      - "7d"
+      - "30d"
+      - "-1"
+  NSFW:
+    display: "NSFW"
+    durations:
+      - "3d"
+      - "7d"
+      - "14d"
+      - "30d"
+      - "-1"
+  Suicide-Encouragement:
+    display: "Suicide Encouragement"
+    durations:
+      - "7d"
+      - "14d"
+      - "30d"
+      - "-1```

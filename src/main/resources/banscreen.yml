@@ -1,0 +1,10 @@
+# Ban Screen Configuration
+# Use & for color codes (e.g., &c for red, &7 for gray, &f for white)
+# Available placeholders: %reason%, %time%, %banid%, %discord%
+
+title: "&7Connection Lost"
+line1: "&cYou have been banned for %reason%"
+line2: "&7Time left: &f%time%"
+line3: "&7Ban ID: &f%banid%"
+line4: "&7You may be able to appeal this ban on"
+line5: "&f%discord%"

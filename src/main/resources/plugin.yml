@@ -1,0 +1,6 @@
+name: Berry-Punishments
+version: '1.0'
+main: net.berrypvp.berryPunishments.BerryPunishments
+api-version: '1.21'
+authors: [ MatuMaKa, BerryPvP ]
+description: Punishment Plugin For BerryPvP

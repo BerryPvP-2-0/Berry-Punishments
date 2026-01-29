@@ -1,0 +1,96 @@
+# Berry-Punishments Messages Configuration
+# Use & for color codes
+
+# Permission messages
+no-permission: "&cYou don't have permission to use this command!"
+
+# Command usage messages
+alts-usage: "&cUsage: /alts <player | ip>"
+ban-usage: "&cUsage: /ban <player> <reason>"
+banip-usage: "&cUsage: /banip <player> <reason>"
+unban-usage: "&cUsage: /unban <player>"
+unbanip-usage: "&cUsage: /unbanip <ip>"
+mute-usage: "&cUsage: /mute <player> <reason>"
+unmute-usage: "&cUsage: /unmute <player>"
+kick-usage: "&cUsage: /kick <player> <reason>"
+searchid-usage: "&cUsage: /searchid <id>"
+history-usage: "&cUsage: /history <player>"
+
+# Success messages
+player-banned: "&a%player% has been banned for %reason% for %duration%. &7(Ban ID: %banid%)"
+player-ipbanned: "&a%player% (%ip%) has been IP banned for %reason% for %duration%. &7(Ban ID: %banid%)"
+player-unbanned: "&a%player% has been unbanned."
+ip-unbanned: "&aIP %ip% has been unbanned."
+player-muted: "&a%player% has been muted for %reason% for %duration%. &7(Mute ID: %muteid%)"
+player-unmuted: "&a%player% has been unmuted."
+player-kicked: "&a%player% has been kicked for %reason%."
+plugin-reloaded: "&aBerry-Punishments has been reloaded!"
+
+# Broadcast messages (sent to players with berry.command.punishments.seelogs.ban or .mute or .kick)
+ban-broadcast: "&7[&c!&7] &e%player% &7was banned by &e%bannedby% &7for &e%reason% &7(&e%duration%&7)"
+mute-broadcast: "&7[&c!&7] &e%player% &7was muted by &e%mutedby% &7for &e%reason% &7(&e%duration%&7)"
+kick-broadcast: "&7[&c!&7] &e%player% &7was kicked by &e%kickedby% &7for &e%reason%"
+
+# Error messages
+player-not-found: "&cPlayer %player% has never joined the server!"
+player-not-online: "&cPlayer %player% is not online!"
+player-not-online-for-ip: "&cPlayer %player% must be online for IP bans!"
+player-not-banned: "&c%player% is not banned!"
+ip-not-banned: "&cIP %ip% is not banned!"
+player-not-muted: "&c%player% is not muted!"
+id-not-found: "&cNo punishment found with ID %id%!"
+alts-no-alts: "&cNo alts found for %player%."
+
+# Info messages
+you-are-muted: "&cYou have been muted for %reason% for %duration%."
+alts-scanning: "&eScanning %player%..."
+
+checkban-info: |
+  &7&m--------------------&r &c&lBan Information &7&m--------------------
+  &7Player: &f%player%
+  &7Ban ID: &f%banid%
+  &7Banned by: &f%bannedby%
+  &7Reason: &f%reason%
+  &7Date: &f%date%
+  &7Duration: &f%duration%
+  &7Time Left: &f%timeleft%
+
+checkmute-info: |
+  &7&m--------------------&r &c&lMute Information &7&m--------------------
+  &7Player: &f%player%
+  &7Mute ID: &f%muteid%
+  &7Muted by: &f%mutedby%
+  &7Reason: &f%reason%
+  &7Date: &f%date%
+  &7Duration: &f%duration%
+  &7Time Left: &f%timeleft%
+
+# Search ID
+searchid-ban-info: |
+  &7&m--------------------&r &c&lBan Information &7&m--------------------
+  &7Ban ID: &f%banid%
+  &7Player: &f%player%
+  &7Banned by: &f%bannedby%
+  &7Reason: &f%reason%
+  &7Date: &f%date%
+  &7Duration: &f%duration%
+  &7Time Left: &f%timeleft%
+  &7Active: &f%active%
+
+searchid-mute-info: |
+  &7&m--------------------&r &c&lMute Information &7&m--------------------
+  &7Mute ID: &f%muteid%
+  &7Player: &f%player%
+  &7Muted by: &f%mutedby%
+  &7Reason: &f%reason%
+  &7Date: &f%date%
+  &7Duration: &f%duration%
+  &7Time Left: &f%timeleft%
+  &7Active: &f%active%
+
+# Ban/Mute history
+no-ban-history: "&c%player% has no ban history."
+no-mute-history: "&c%player% has no mute history."
+
+history-header: "&7&m--------------------&r &c&lPunishment History: %player% &7&m--------------------&r\n&7Total Punishments: &f%count%"
+history-entry: "&7%id% &8- &f%reason% &7by &f%punishedby% &7on &f%date% &7(&f%duration%&7) &8- &7Active: %active%"
